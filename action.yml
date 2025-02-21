@@ -7,8 +7,10 @@ inputs:
     description: "Command to run (see README for commands)"
     default: "update"
 runs:
-  using: "node20"
-  main: "dist/index.js"
+  using: "docker"
+  image: "Dockerfile"
+  # using: "node20"
+  # main: "dist/index.js"
 branding:
   icon: "chevron-up"
   color: "green"
